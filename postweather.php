@@ -16,7 +16,7 @@
     if (!$conn)
         die ('Connection failed: ' . mysqli_connect_error());
 
-	$sql = "INSERT INTO weatherdata (Temp, Humidity, DateTime, User, Sensot) 
+	$sql = "INSERT INTO weatherdata (Temp, Humidity, DateTime, User, Sensor) 
 				VALUES (" . $temp . ", " . $humidity . ", NOW(), '" . $user . "', '" . $sensor ."')";
 
 	if (mysqli_query($conn, $sql)) {
