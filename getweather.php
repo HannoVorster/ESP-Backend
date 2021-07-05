@@ -1,7 +1,7 @@
 <?php
     require './connect.php';
 
-    $query = "SELECT * FROM weatherdata";
+    $query = "SELECT * FROM weatherdata ORDER BY Id ASC";
 
     if ($result = mysqli_query($conn, $query)) {
         $json = array();
